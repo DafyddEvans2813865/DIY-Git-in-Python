@@ -40,4 +40,4 @@ def cat_file(args):
     # Flush stdout to ensure no buffered output remains
     sys.stdout.flush()
     # Write binary data of the specified object to stdout
-    sys.stdout.buffer.write (data.get_object(args.object))
+    sys.stdout.buffer.write(data.get_object(args.object,expected=None))
